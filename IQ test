@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+ 
+using namespace std;
+ 
+int main()
+{
+    int i,a,b,E,O,AO=0,AE=0;
+    cin>>a;
+    for(i=0;i<a;i++)
+    {
+        cin>>b;
+        if(b%2==0){E++;AE=i+1;}
+        else {O++;AO=i+1;}
+    }
+    cout<<(E==1?AE:AO)<<endl;
+ 
+    return 0;
