@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+ 
+using namespace std;
+ 
+int main()
+{
+    int W;
+    cin>>W;
+    if(W<4)
+    {
+     cout<<"NO"<<endl;
+    }
+    else{
+    if(W%2==1)
+    {
+        cout<<"NO"<<endl;
+    }
+    else
+    {
+        cout<<"YES"<<endl;
+    }
+    }
+    return 0;
+}
