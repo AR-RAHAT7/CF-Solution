@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+#include<ctype.h>
+using namespace std;
+ 
+int main()
+{
+     string S;
+    vector<char>an;
+ 
+    cin>>S;
+    char b;
+    int i;
+    for(i=0;i<S.size();i++)
+    {
+        b=S.at(i);
+        if(b!='a'&&b!='A'&&b!='e'&&b!='E'&&b!='i'&&b!='I'&&b!='o'&&b!='O'&&b!='u'&&b!='U'&&b!='y'&&b!='Y')
+        {
+            an.push_back(b);
+        }
+    }
+    for(i=0;i<an.size();i++)
+    {
+        b=tolower(an[i]);
+        cout<<'.'<<b;
+    }
+    cout<<endl;
+    return 0;
+}
