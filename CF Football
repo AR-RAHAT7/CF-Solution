@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+#include<ctype.h>
+using namespace std;
+ 
+int main()
+{
+    string S;
+    int i,a0=0,a1=0;
+    cin>>S;
+    for(i=0;i<S.size();i++)
+    {
+        if((S.at(i)-'0')==0)
+        {
+            a0++;
+            a1=0;
+            if(a0==7)
+                break;
+        }
+        else if((S.at(i)-'0')==1)
+        {
+ 
+            a1++;
+            a0=0;
+            if(a1==7)
+                break;
+        }
+    }
+    if(a0==7||a1==7)
+    {
+        cout<<"YES"<<endl;
+    }
+    else
+        cout<<"NO"<<endl;
+    return 0;
+}
