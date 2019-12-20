@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+#include<ctype.h>
+using namespace std;
+string Tolower(string a)
+{
+    string b;
+    int i;
+    for(i=0;i<a.size();i++)
+    {
+        b+=tolower(a.at(i));
+    }
+    b+='\0';
+    return b;
+}
+int main()
+{
+    string a,b;
+    cin>>a>>b;
+    a=Tolower(a);
+    b=Tolower(b);
+    if(a>b)
+        cout<<"1"<<endl;
+    else if(a<b)
+        cout<<"-1"<<endl;
+    else
+        cout<<"0"<<endl;
+    return 0;
+}
