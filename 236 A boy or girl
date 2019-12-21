@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+	int i,j,n;
+	string S;
+    cin>>S;
+	int ans=S.size();
+	for(i=0;i<S.size();i++)
+    {
+        for(j=i+1;j<S.size();j++)
+        {
+            if(S.at(i)==S.at(j))
+            {
+                ans--;
+                S.at(j)='0';
+            }
+        }
+    }
+    int k=ans%2;
+    cout<<(k==0?"CHAT WITH HER!":"IGNORE HIM!")<<endl;
+}
